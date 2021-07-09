@@ -181,6 +181,7 @@ Parameters:
     "Check_out_time": ""
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/Get%20data.png)
 ```
 3. Upload files to File Management and record the path in the database.
 POST : http://140.118.121.96:5052/upload_file
@@ -189,6 +190,7 @@ Parameters:
   a. Element_id [test]
   b. Element_location_file [file]
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/Upload_file.png)
 ```
 4. According to the path stored in the database, and download files from the File Management. 
 POST : http://140.118.121.96:5052/download_file 
@@ -196,6 +198,7 @@ Rule: Body -> form-data (Key, Value)
 Parameters:
   a. Element_id [test]
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/Download_file.png)
 ```
 5. Check out the Element of the Project. 
 POST : http://140.118.121.96:5052/check_out 
@@ -207,6 +210,7 @@ Parameters:
 	"Element_id" : ["Test_projectN7", "Test_projectN8", "Test_projectN9", "Test_projectN10", "Test_projectN11"]
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/Check_out.png)
 ```
 6. Check in data verification 
 POST : http://140.118.121.96:5052/Checkin_verification 
@@ -216,6 +220,7 @@ Parameters:
     "Check_in_hashcode": "0xcce0d044e21bc5d85dd43b88da1969489ea767b62e2ebfa75269863e4b29569e" 
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/Check_in_verify.png)
 ```
 7. Check out data verification
 POST : http://140.118.121.96:5052/Checkout_verification
@@ -225,6 +230,7 @@ Parameters:
     "Check_out_hashcode": "0xe1681b78cce1f1e34b5c03bac3284c319550a717d94a95b1394d2907484c3b81" 
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/Check_out_verify.png)
 ```
 8. Use the SQL command: "SELECT"
 POST : http://140.118.121.96:5052/sql_select 
@@ -234,6 +240,7 @@ Parameters:
     "SQL_command": "select * from BIMP.Project_Information where Element_id = 'Test_projectN1';"
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/SQL_select.png)
 ```
 9. Use the SQL command: "INSERT"
 POST : http://140.118.121.96:5052/sql_insert 
@@ -243,6 +250,7 @@ Parameters:
 	"SQL_command" : "insert into TEST.test(Project_id, Project_user_id, Object_id, Element_id, Element_location, Element_parameters, Label_name, Label)values('Test_project', 'Susanwu', 'susanwu20201215151615251353', 'HJPN1', '[0.99849714986386384, -0.054803665148789531, 0.0, 0.0, 0.054803665148789531, 0.99849714986386384,0.0, 0.0, 0.0, 0.0, 1.0, 2100.0, 0.0, 0.0, 0.0, 1.0 ]', '[ Panel Length1: 600.0, Panel Length2: 600.0, Panel Thickness: 10.0, Control Ratio: 0.1, Hole Radius: 20.0, Material Option: 0]', '[Object, Color, Owner]', '[Object_D, Red, Susan1]')"
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/SQL_insert.png)
 ```
 10. Use the SQL command: "UPDATE"
 POST : http://140.118.121.96:5052/sql_update
@@ -252,20 +260,16 @@ Parameters:
 	"SQL_command" : "Update TEST.test set Project_user_id = '11', Element_id = '11' where Project_id = '1';"
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/SQL_update.png)
 ```
 11. Use the SQL command: "DELETE"
 POST : http://140.118.121.96:5052/sql_delete
 Rule: Body -> raw -> json
 Parameters:
 {
-	```
-10. Use the SQL command: "UPDATE"
-POST : http://140.118.121.96:5052/sql_update
-Rule: Body -> raw -> json
-Parameters:
-{
 	"SQL_command" : "delete from TEST.test where Project_id = '1';"
 }
 ```
+![Image text](https://github.com/xiehuangjun/BIM_Project_Database/blob/main/Grasshopper%20Figure/SQL_delete.png)
 
 > editor editor HJ 2021/07/08
