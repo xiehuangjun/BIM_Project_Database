@@ -28,9 +28,9 @@
 
 geth --datadir test init ./genesis.json
 
-geth --datadir ./test   --networkid 1234 --port 50885 --rpc --rpcapi=db,eth,web3,personal --rpcport "30678" --rpcaddr=0.0.0.0 --nodiscover --allow-insecure-unlock console
+geth --datadir ./test   --networkid 1234 --port 50885 --rpc --rpcapi=db,eth,web3,personal --rpcport "30678" --rpcaddr=0.0.0.0 --nodiscover --allow-insecure-unlock --mine --miner.threads 1 console
 
-nohup geth --datadir ./test   --networkid 1234 --port 50885 --rpc --rpcapi=db,eth,web3,personal --rpcport "30678" --rpcaddr=0.0.0.0 --nodiscover --allow-insecure-unlock &
+nohup geth --datadir ./test   --networkid 1234 --port 50885 --rpc --rpcapi=db,eth,web3,personal --rpcport "30678" --rpcaddr=0.0.0.0 --nodiscover --allow-insecure-unlock --mine --miner.threads 1 &
 
 personal.newAccount("password")  //miner
 
