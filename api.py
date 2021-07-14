@@ -222,6 +222,7 @@ def location():
     if(Element_id != ""):
         data_text_name.append('Element_id')
         data_text_value.append(Element_id)
+        time_start = time.time()
     else:
         pass
     if(Label != ""):
@@ -272,6 +273,13 @@ def location():
             data_json['Check_out_time'] = raw[11]
 
             data_out.append(data_json)
+
+        if (data_text_name[0] == "Element_id"):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
         
         return json.dumps(data_out), status.HTTP_200_OK
     
@@ -293,6 +301,13 @@ def location():
             data_json['Check_out_time'] = raw[11]
             
             data_out.append(data_json)
+        
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
         
         return json.dumps(data_out), status.HTTP_200_OK
 
@@ -316,6 +331,13 @@ def location():
             
             data_out.append(data_json)
         
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id") or (data_text_name[2] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
+        
         return json.dumps(data_out), status.HTTP_200_OK
 
     elif(len(data_text_name) == 4):
@@ -338,6 +360,13 @@ def location():
             data_json['Check_out_time'] = raw[11]
             
             data_out.append(data_json)
+        
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id") or (data_text_name[2] == "Element_id") or (data_text_name[3] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
         
         return json.dumps(data_out), status.HTTP_200_OK
     
@@ -363,6 +392,13 @@ def location():
             
             data_out.append(data_json)
         
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id") or (data_text_name[2] == "Element_id") or (data_text_name[3] == "Element_id") or (data_text_name[4] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
+        
         return json.dumps(data_out), status.HTTP_200_OK
     
     elif(len(data_text_name) == 6):
@@ -386,6 +422,13 @@ def location():
             data_json['Check_out_time'] = raw[11]
             
             data_out.append(data_json)
+        
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id") or (data_text_name[2] == "Element_id") or (data_text_name[3] == "Element_id") or (data_text_name[4] == "Element_id") or (data_text_name[5] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
         
         return json.dumps(data_out), status.HTTP_200_OK
 
@@ -411,6 +454,13 @@ def location():
             data_json['Check_out_time'] = raw[11]
             
             data_out.append(data_json)
+
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id") or (data_text_name[2] == "Element_id") or (data_text_name[3] == "Element_id") or (data_text_name[4] == "Element_id") or (data_text_name[5] == "Element_id") or (data_text_name[6] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
         
         return json.dumps(data_out), status.HTTP_200_OK   
 
@@ -437,6 +487,13 @@ def location():
             data_json['Check_out_time'] = raw[11]
             
             data_out.append(data_json)
+
+        if ((data_text_name[0] == "Element_id") or (data_text_name[1] == "Element_id") or (data_text_name[2] == "Element_id") or (data_text_name[3] == "Element_id") or (data_text_name[4] == "Element_id") or (data_text_name[5] == "Element_id") or (data_text_name[6] == "Element_id") or (data_text_name[7] == "Element_id")):
+            time_stop = time.time()
+            Get_time = time_stop - time_start
+
+            cur.execute('''UPDATE BIMP.Project_Information SET Project_id_co_time = '%s' WHERE Element_id = '%s';''' %(Get_time, Element_id))
+            mysql.commit()
         
         return json.dumps(data_out), status.HTTP_200_OK 
 
