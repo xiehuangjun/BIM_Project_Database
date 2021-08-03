@@ -269,8 +269,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
 
             data_out.append(data_json)
 
@@ -297,8 +299,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
         
@@ -326,8 +330,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
         
@@ -356,8 +362,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
         
@@ -387,8 +395,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
         
@@ -418,8 +428,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
         
@@ -450,8 +462,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
 
@@ -483,8 +497,10 @@ def location():
             data_json['Label'] = raw[7]
             data_json['Check_in_status'] = raw[8]
             data_json['Check_in_time'] = raw[9]
+            data_json['Project_check_in_element_hashcode'] = raw[23]
             data_json['Check_out_status'] = raw[10]
             data_json['Check_out_time'] = raw[11]
+            data_json['Project_check_out_element_hashcode'] = raw[25]
             
             data_out.append(data_json)
 
